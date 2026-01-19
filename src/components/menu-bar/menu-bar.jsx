@@ -34,7 +34,7 @@ import CloudVariablesToggler from '../../containers/tw-cloud-toggler.jsx';
 import TWSaveStatus from './tw-save-status.jsx';
 import TWNews from './tw-news.jsx';
 
-import {openTipsLibrary, openSettingsModal, openRestorePointModal} from '../../reducers/modals';
+import {openTipsLibrary, openSettingsModal, openRestorePointModal, openUnknownPlatformModal, openLoadingProject, openSpriteLibrary, openSoundLibrary, openExtensionLibrary, openCostumeLibrary, openBackdropLibrary} from '../../reducers/modals';
 import {setPlayer} from '../../reducers/mode';
 import {
     isTimeTravel220022BC,
@@ -97,6 +97,7 @@ import addonsIcon from './addons.svg';
 import errorIcon from './tw-error.svg';
 import advancedIcon from './tw-advanced.svg';
 
+import normalLogo from './scratch-logo.svg';
 import ninetiesLogo from './nineties_logo.svg';
 import catLogo from './cat_logo.svg';
 import prehistoricLogo from './prehistoric-logo.svg';
@@ -492,6 +493,18 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
+                    <div className={classNames(styles.menuBarItem)}>
+                        <a href="">
+                                <img
+                                    alt="Scratch"
+                                    className={classNames(styles.scratchLogo, {
+                                        [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
+                                    })}
+                                    draggable={false}
+                                    src={normalLogo}
+                                />
+                                </a>
+                        </div>
                         {this.props.errors.length > 0 && <div>
                             <MenuLabel
                                 open={this.props.errorsMenuOpen}
@@ -1219,6 +1232,26 @@ const mapDispatchToProps = dispatch => ({
     onClickSettingsModal: () => {
         dispatch(closeEditMenu());
         dispatch(openSettingsModal());
+    },
+    onClickSpriteLibrary: () => {
+        dispatch(closeEditMenu());
+        dispatch(openSpriteLibrary());
+    },
+    onClickExtention: () => {
+        dispatch(closeEditMenu());
+        dispatch(openExtensionLibrary());
+    },
+    onClickBackdrop: () => {
+        dispatch(closeEditMenu());
+        dispatch(openBackdropLibrary());
+    },
+    onClickSound: () => {
+        dispatch(closeEditMenu());
+        dispatch(openSoundLibrary());
+    },
+    OnClickCostumeLibrary: () => {
+        dispatch(closeEditMenu());
+        dispatch(openCostumeLibrary());
     },
     onRequestCloseSettings: () => dispatch(closeSettingsMenu()),
     onClickNew: needSave => {

@@ -55,6 +55,7 @@ const manifest = {
       "url": "userscript.js"
     }
   ],
-  "dynamicDisable": true
+  "dynamicDisable": true,
+  "enabledByDefault": true
 };
 export default manifest;

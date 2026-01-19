@@ -56,7 +56,7 @@ const handleClickAddonSettings = addonId => {
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'Run Scratch projects faster',
+        defaultMessage: '',
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -87,8 +87,8 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="{APP_NAME} is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that TurboWarp is not connected to Scratch"
+                    defaultMessage="Turbowarp and Bluewarp is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation. Bluewarp is also not affiliated with Turbowarp"
+                    description="Disclaimer that TurboWarp and Bluewarp is not connected to Scratch"
                     id="tw.footer.disclaimer"
                     values={{
                         APP_NAME
@@ -151,7 +151,7 @@ const Footer = () => (
                     </a>
                     <a href="https://docs.turbowarp.org/">
                         <FormattedMessage
-                            defaultMessage="Documentation"
+                            defaultMessage="Turbowarp Documentation"
                             description="Link in footer to additional documentation"
                             id="tw.footer.documentation"
                         />
@@ -160,7 +160,7 @@ const Footer = () => (
                 <div className={styles.footerSection}>
                     <a href="https://scratch.mit.edu/users/GarboMuffin/#comments">
                         <FormattedMessage
-                            defaultMessage="Feedback & Bugs"
+                            defaultMessage="Turbowarp Feedback & Bugs"
                             description="Link to feedback/bugs page"
                             id="tw.feedback"
                         />
@@ -329,8 +329,8 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="{APP_NAME} is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by inputting a project ID or URL above or choosing a featured project below."
-                                        description="Description of TurboWarp on the homepage"
+                                        defaultMessage="Bluewarp Scratch is a mod of turbowarp, made to look simmlar to Scratch 2.0, but not the same. It is build on turbowarp, supports dark mode, more extenstions, All old JMOD project will be able to load here."
+                                        description="Description of Bluewarp Scratch on the homepage"
                                         id="tw.home.description"
                                         values={{
                                             APP_NAME
