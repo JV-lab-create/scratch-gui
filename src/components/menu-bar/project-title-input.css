@@ -10,7 +10,6 @@ can set a width for example or what it should do in a flex box (eg. grow).
 
 .title-field {
     border: 1px dashed $ui-black-transparent;
-    border-radius: $form-radius;
     -webkit-border-radius: $form-radius;
     -moz-border-radius: $form-radius;
     background-color: $project-title-inactive;
@@ -24,6 +23,7 @@ can set a width for example or what it should do in a flex box (eg. grow).
     color: $menu-bar-foreground;
     font-weight: bold;
     font-size: .8rem;
+    border-radius: 20px;
 }
 
 .title-field::placeholder {

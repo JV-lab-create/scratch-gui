@@ -77,15 +77,15 @@
 .tab {
     flex-grow: 1;
     height: 80%;
-    margin-bottom: 0;
-
-    border-radius: 1rem 1rem 0 0;
-    border: 1px solid $ui-black-transparent;
+    margin: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 1rem 1rem 1rem 1rem;
 
     padding: 0.125rem 1.25rem 0;
     font-size: 0.75rem;
 
-    background-color: $ui-tertiary;
+    background-color: black;
     color: $text-primary-transparent;
 
     display: flex;
@@ -124,13 +124,12 @@
 }
 
 .tab:hover {
-  background-color: $ui-primary;
+  background-color: $looks-transparent;
 }
 
 .tab.is-selected {
-    height: 90%;
-    color: $looks-secondary;
-    background-color: $ui-white;
+    color: white;
+    background-color: $looks-secondary;
     z-index: 4; /* Make sure selected is always above */
 }
 
@@ -168,7 +167,6 @@
 .tab.is-selected:focus {
     outline: none;
     box-shadow: none;
-    border-color: $ui-black-transparent;
 }
 
 .tab.is-selected:focus:after {

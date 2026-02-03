@@ -4,7 +4,8 @@
 
 .monitor-container {
     position: absolute;
-    background: $ui-primary-default;
+    background: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
     z-index: $z-index-monitor;
     border: 1px solid $ui-black-transparent-default;
     border-radius: calc($space / 2);
@@ -75,18 +76,19 @@
 }
 
 .list-header {
-    background: $ui-white-default;
+    background: rgb(46, 46, 46);
+    color: white;
     border-bottom: 1px solid $ui-black-transparent-default;
     text-align: center;
     padding: 3px;
     font-size: 0.75rem;
     font-weight: bold;
-    color: $text-primary-default;
     width: 100%;
 }
 
 .list-body {
-    background: $ui-primary-default;
+    background: rgb(68, 68, 68);
+    color: rgb(161, 161, 161);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -106,7 +108,7 @@
 
 .list-index {
     font-weight: bold;
-    color: $text-primary-default;
+    color: white;
     margin: 0 3px;
 }
 
@@ -121,7 +123,8 @@
 }
 
 .list-footer {
-    background: $ui-white-default;
+    background: rgb(46, 46, 46);
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -176,13 +179,16 @@
 .add-button {
     cursor: pointer;
     margin-right: 3px;
+    color: white;
 }
 
 .resize-handle {
     cursor: nwse-resize;
     margin-left: 3px;
+    color: white;
 }
 
 .footer-length {
     text-align: center;
+    color: white;
 }
