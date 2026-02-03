@@ -1,4 +1,6 @@
-scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) then modified for use in Bluewarp
+scratch-gui modified for use in [TurboWarp](https://turbowarp.org/) then modified for use in Nitrowarp
+
+Rebranding the name to Nitrowarp
 
 ## Setup
 
